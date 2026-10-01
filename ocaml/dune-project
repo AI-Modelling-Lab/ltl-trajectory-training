@@ -1,0 +1,26 @@
+(lang dune 3.11)
+
+(name isatensor)
+
+(generate_opam_files false)
+
+(source
+ (github AI-Modelling-Lab/isa-Tensor))
+
+(authors "Filip Smola")
+
+(maintainers "Filip Smola")
+
+;(license LICENSE)
+;
+;(documentation https://url/to/documentation)
+
+(package
+ (name isatensor)
+ (synopsis "Formally verified tensors")
+ (description "Formally verified tensors")
+ (depends (ocaml (>= 5)) dune zarith angstrom)
+ (tags
+  (tensor)))
+
+; See the complete stanza docs at https://dune.readthedocs.io/en/stable/dune-files.html#dune-project

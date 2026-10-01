@@ -1,0 +1,20 @@
+(library
+ (public_name isatensor)
+ (name isatensor)
+ (modules Lib)
+ (libraries zarith))
+
+(executable
+  (name ltl_loss)
+  (public_name ltl_loss)
+  (package isatensor)
+  (modules Ltl_loss)
+  (libraries isatensor angstrom))
+
+; Make errors into warnings for:
+; - Unused rec flag
+; - Unused variable
+; - Non-exhaustive pattern
+(env
+  (dev
+    (flags (:standard -warn-error -39-27-8))))

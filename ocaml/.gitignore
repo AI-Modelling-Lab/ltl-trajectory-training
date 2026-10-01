@@ -1,0 +1,5 @@
+# Dune
+_build
+
+# Generated executables
+execs
