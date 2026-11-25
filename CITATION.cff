@@ -1,0 +1,40 @@
+cff-version: 1.2.0
+type: software
+
+title: "Software accompanying Formally Verified Neurosymbolic Trajectory Learning via Tensor-based Linear Temporal Logic on Finite Traces"
+
+message: "If you use this software, please cite this release."
+
+abstract: >-
+  This software provides an implementation of the methods described in our JAIR paper. It includes formally verified components developed using Isabelle/HOL, generated executable code, and Jupyter notebooks demonstrating the implementation and its applications.
+
+authors:
+  - given-names: "Mark"
+    family-names: "Chevallier"
+    affiliation: "University of Edinburgh"
+
+  - given-names: "Filip"
+    family-names: "Smola"
+    affiliation: "University of Edinburgh"
+
+  - given-names: "Richard"
+    family-names: "Schmoetten"
+    affiliation: "University of Edinburgh"
+  
+  - given-names: "Jacques D."
+    family-names: "Fleuriot"
+    affiliation: "University of Edinburgh"
+
+version: "1.0.0"
+
+repository-code: "https://github.com/AI-Modelling-Lab/ltl-trajectory-training"
+
+keywords:
+  - linear temporal logic
+  - formal verification
+  - Isabelle/HOL
+  - research software
+
+license: "MIT"
+date-released: "2026-11-25"
+#doi: "10.5281/zenodo.XXXXXXX"
