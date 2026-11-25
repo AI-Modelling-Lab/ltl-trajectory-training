@@ -38,3 +38,25 @@ keywords:
 license: "MIT"
 date-released: "2026-11-25"
 #doi: "10.5281/zenodo.XXXXXXX"
+
+preferred-citation:
+  type: article
+  title: "Formally Verified Neurosymbolic Trajectory Learning via Tensor-based Linear Temporal Logic on Finite Traces"
+  authors:
+    - given-names: "Mark"
+      family-names: "Chevallier"
+      affiliation: "University of Edinburgh"
+  
+    - given-names: "Filip"
+      family-names: "Smola"
+      affiliation: "University of Edinburgh"
+  
+    - given-names: "Richard"
+      family-names: "Schmoetten"
+      affiliation: "University of Edinburgh"
+    
+    - given-names: "Jacques D."
+      family-names: "Fleuriot"
+      affiliation: "University of Edinburgh"
+  journal: "Journal of Artificial Intelligence Research"
+  status: in-press
