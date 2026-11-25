@@ -8,7 +8,7 @@ As such, there can be small differences in the learned trajectories.
 
 ## Licence
 
-Being an accompanyment to the paper, this code is licensed in the same way: [Creative Commons Attribution 4.0](https://creativecommons.org/licenses/by/4.0/).
+This software is released under an MIT license (details in the accompanying LICENSE file).
 
 ## Installation
 
