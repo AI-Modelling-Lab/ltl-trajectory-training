@@ -1,6 +1,6 @@
 # Formally Verified LTLf for PyTorch
 
-This repository accompanies the paper titled [Formally Verified Neurosymbolic Trajectory Learning via Tensor-based Linear Temporal Logic on Finite Traces](https://arxiv.org/abs/2501.13712).
+This repository accompanies the paper titled Formally Verified Neurosymbolic Trajectory Learning via Tensor-based Linear Temporal Logic on Finite Traces.
 It contains OCaml code generated from the Isabelle/HOL formalisation, which is used to inject LTLf constraints into PyTorch learners, and what is required to run the case studies in the paper.
 
 Note that the case study code does not fix the randomness seed for Python, NumPy or PyTorch.
