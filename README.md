@@ -1,7 +1,7 @@
-# Formally Verified LTLf for PyTorch
+# Formally Verified LTL<sub>_f_</sub> for PyTorch
 
 This repository accompanies the paper titled Formally Verified Neurosymbolic Trajectory Learning via Tensor-based Linear Temporal Logic on Finite Traces.
-It contains OCaml code generated from the Isabelle/HOL formalisation, which is used to inject LTLf constraints into PyTorch learners. This is required to run the case studies in the paper, which are also included.
+It contains OCaml code generated from the Isabelle/HOL formalisation, which is used to inject LTL<sub>_f_</sub> constraints into PyTorch learners. This is required to run the case studies in the paper, which are also included.
 
 Note that the case study code does not fix the randomness seed for Python, NumPy or PyTorch.
 As such, there can be small differences in the learned trajectories.
@@ -12,8 +12,8 @@ This software is released under an MIT license (details in the accompanying LICE
 
 ## Installation
 
-Requirements to build the LTLf loss executable:
-- `opam` to manage OCaml packages, with `ocaml` version 5 (tested with `5.1.1` and `5.3.0`), `zarith` (for arbitrary precisiion integers) and `angstrom` (for LTLf parsing) packages installed
+Requirements to build the LTL<sub>_f_</sub> loss executable:
+- `opam` to manage OCaml packages, with `ocaml` version 5 (tested with `5.1.1` and `5.3.0`), `zarith` (for arbitrary precisiion integers) and `angstrom` (for LTL<sub>_f_</sub> parsing) packages installed
 - `dune` to build the OCaml project
 
 Once opam is installed and initialised, you can create a new switch and install the packages as follows:
@@ -74,7 +74,7 @@ This takes four parameters, with only the first being mandatory:
 
 For instance consider a constraint for avoiding a zone around a point.
 The constraint instance transforms a trace with 2D coordinates into distance from a point, appends a threshold constant and sets the smoothing factor to 0.005.
-The LTLf formula is `G (0 >= 1)` to say that the distance from the point must always be greater than or equal to the threshold.
+The LTL<sub>_f_</sub> formula is `G (0 >= 1)` to say that the distance from the point must always be greater than or equal to the threshold.
 In Python:
 ```
 avoid_pt = torch.Tensor([0.4,0.4]).to(DEVICE)
@@ -89,14 +89,14 @@ The constraint loss has the forward and backward functions defined for PyTorch's
 
 ### Constraint Language
 
-The constraint language is based on LTLf with atoms formed by a comparison language between elements of the state.
+The constraint language is based on LTL<sub>_f_</sub> with atoms formed by a comparison language between elements of the state.
 Its string representation is parsed in [OCaml](ocaml/conse/ltl_loss.ml) into the relevant formal objects.
 
 The basic atoms of the language are natural numbers representing indices into the trace (possibly transformed and extended as part of the `Constraint` object).
 
 These indices can be paired in six ways, representing comparisons of their values at a certain index in the trace: `<=`, `<`, `==`, `!=`, `>=`, `>`.
 
-These comparisons form the atoms of an expression language that represents LTLf constraints.
+These comparisons form the atoms of an expression language that represents LTL<sub>_f_</sub> constraints.
 It has the following operators:
 - `!` - logical negation
 - `N` - strong next
