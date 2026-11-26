@@ -3,7 +3,7 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24531331.svg)](https://doi.org/10.5281/zenodo.24531331)
 
 This repository accompanies the paper titled *Formally Verified Neurosymbolic Trajectory Learning via Tensor-based Linear Temporal Logic on Finite Traces*.
-It contains OCaml code generated from the Isabelle/HOL formalisation, which is used to inject LTL<sub>_f_</sub> constraints into PyTorch learners. This is required to run the case studies in the paper, which are also included.
+It contains OCaml code generated from the Isabelle/HOL formalisation, which is used to inject LTL<sub>_f_</sub> constraints into PyTorch learners. This is required to run the case studies on trajectory planning in the paper, which are also included.
 
 Note that the case study code does not fix the randomness seed for Python, NumPy or PyTorch.
 As such, there can be small differences in the learned trajectories.
